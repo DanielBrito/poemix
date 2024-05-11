@@ -1,0 +1,31 @@
+html {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently */
+}
+
+body {
+  height: 100vh;
+
+  padding: 0 30px;
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#logo {
+  width: 100%;
+  max-width: 500px;
+}

@@ -30,8 +30,15 @@ body {
   max-width: 500px;
 }
 
-#development-status {
-  margin-top: 10px;
+nav {
+  width: 100%;
+
   display: flex;
   justify-content: center;
+
+  margin-top: 15px;
+}
+
+.link {
+  margin: 0 10px;
 }

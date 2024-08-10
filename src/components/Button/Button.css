@@ -1,0 +1,19 @@
+.button-block {
+  @apply w-24 relative inline-block px-4 py-2 font-medium;
+}
+
+.button-block-default {
+  @apply absolute inset-0 w-full h-full bg-red-600 border-2 border-black group-hover:bg-black;
+}
+
+.button-text {
+  @apply relative text-white group-hover:text-white flex items-center justify-center;
+}
+
+.button-block-hover {
+  @apply absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0;
+}
+
+.button-link {
+  margin: 0 20px;
+}

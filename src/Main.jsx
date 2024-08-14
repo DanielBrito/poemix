@@ -1,25 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
-import Zines from "./pages/Zines.jsx";
-import Protestizando1 from "./pages/zines/Protestizando1.jsx";
-import ALerVazios from "./pages/books/ALerVazios.jsx";
-import Books from "./pages/Books.jsx";
-import Error from "./pages/Error.jsx";
-import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Home from "./pages/Home/Home.jsx";
+import Zines from "./pages/Zines/Zines.jsx";
+import Protestizando1 from "./pages/Publication/zines/Protestizando1.jsx";
+import ALerVazios from "./pages/Publication/books/ALerVazios.jsx";
+import Books from "./pages/Books/Books.jsx";
+import Error from "./pages/Error/Error.jsx";
+import "./index.css";
 import {
   APP_BASE_URL,
   ZINE_PATH,
   BOOKS_PATH,
   PROTESTIZANDO_1_PATH,
   A_LER_VAZIOS_PATH,
-} from "./paths.jsx";
+} from "./constants/Paths.js";
 
 const router = createBrowserRouter([
   {
     path: APP_BASE_URL,
-    element: <App />,
+    element: <Home />,
     errorElement: <Error />,
   },
   {

@@ -1,7 +1,8 @@
 import { useLocation } from "react-router-dom";
 import "./style.css";
-import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
+import Breadcrumb from "../../../components/Breadcrumb/Breadcrumb";
 
+// Temporary component
 function ALerVazios() {
   const location = useLocation();
 

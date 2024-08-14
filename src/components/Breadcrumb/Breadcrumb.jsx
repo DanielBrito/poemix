@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./Breadcrumb.css";
-import Divider from "./Divider";
+import Divider from "./Divider/Divider";
 
 function splitPages(absolutePath) {
   return absolutePath.split("/").filter((item) => item !== "");

@@ -1,8 +1,10 @@
+import "./Divider.css";
+
 function Divider() {
   return (
     <>
       <svg
-        className="shrink-0 mx-2 size-4 text-black"
+        className="arrow"
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"

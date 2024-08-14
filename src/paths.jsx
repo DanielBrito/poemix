@@ -1,5 +1,5 @@
 export const APP_BASE_URL = "/poemix";
-export const FANZINE_PATH = "/fanzines";
+export const ZINE_PATH = "/zines";
 export const BOOKS_PATH = "/livros";
 
 export const PROTESTIZANDO_1_PATH = "/protestizando_1";

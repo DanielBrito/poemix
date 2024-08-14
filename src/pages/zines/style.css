@@ -1,8 +1,5 @@
-.publication-listing {
+.zine-reader {
   padding: 0 30px;
-  margin-top: 30px;
-
-  overflow: hidden;
 
   display: flex;
   justify-content: center;
@@ -11,8 +8,5 @@
 
 .title {
   text-align: center;
-}
-
-.link {
-  text-align: center;
+  margin-top: 30px;
 }

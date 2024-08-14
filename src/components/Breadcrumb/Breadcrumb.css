@@ -1,0 +1,14 @@
+.breadcrumb {
+  margin-top: 10px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.previous-items {
+  @apply flex items-center text-sm text-black hover:text-red-800  focus:outline-none focus:text-red-800;
+}
+
+.active-item {
+  @apply inline-flex items-center text-sm font-semibold text-red-600;
+}

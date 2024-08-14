@@ -1,22 +1,22 @@
 import { Link, useLocation } from "react-router-dom";
-import { APP_BASE_URL, BOOKS_PATH, A_LER_VAZIOS_PATH } from "../paths";
+import { APP_BASE_URL, ZINE_PATH, PROTESTIZANDO_1_PATH } from "../paths";
 import "./style.css";
 import Breadcrumb from "../components/Breadcrumb/Breadcrumb";
 
-function Books() {
+function Zines() {
   const location = useLocation();
   const currentPage = location.pathname.split("/").pop();
 
   return (
     <>
-      <div className="books-page">
+      <div className="zine-page">
         <Breadcrumb activePageUrl={currentPage} />
         <div className="publication-listing">
           <Link
             className="link"
-            to={`${APP_BASE_URL}${BOOKS_PATH}${A_LER_VAZIOS_PATH}`}
+            to={`${APP_BASE_URL}${ZINE_PATH}${PROTESTIZANDO_1_PATH}`}
           >
-            Ler A LER VAZIOS
+            Ler PROTESTIZANDO #1
           </Link>
         </div>
       </div>
@@ -24,4 +24,4 @@ function Books() {
   );
 }
 
-export default Books;
+export default Zines;

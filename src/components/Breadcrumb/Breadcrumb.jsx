@@ -1,65 +1,48 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./Breadcrumb.css";
-import {
-  APP_BASE_URL,
-  A_LER_VAZIOS_PATH,
-  BOOKS_PATH,
-  ZINE_PATH,
-  PROTESTIZANDO_1_PATH,
-} from "../../paths";
 import Divider from "./Divider";
 
-const bookPagesPath = [
-  { name: "poemix", label: "Poemix", path: APP_BASE_URL },
-  { name: "livros", label: "Livros", path: `${APP_BASE_URL}${BOOKS_PATH}` },
-  {
-    name: "a_ler_vazios",
-    label: "A Ler Vazios",
-    path: `${APP_BASE_URL}${BOOKS_PATH}${A_LER_VAZIOS_PATH}`,
-  },
-];
+function splitPages(absolutePath) {
+  return absolutePath.split("/").filter((item) => item !== "");
+}
 
-const zinePagesPath = [
-  { name: "poemix", label: "Poemix", path: APP_BASE_URL },
-  { name: "zines", label: "Zines", path: `${APP_BASE_URL}${ZINE_PATH}` },
-  {
-    name: "protestizando_1",
-    label: "Protestizando #1",
-    path: `${APP_BASE_URL}${ZINE_PATH}${PROTESTIZANDO_1_PATH}`,
-  },
-];
+function formatLabel(snakeCaseText) {
+  var label = snakeCaseText.replace(/_/g, " ").toUpperCase();
 
-function Breadcrumb({ activePageUrl }) {
-  var pagesPath;
+  if (label.match(RegExp("PROTESTIZANDO\\s[0-9]+"))) {
+    return label.replace(" ", " #");
+  }
 
-  const isBookNavigation =
-    bookPagesPath.findIndex((page) => page.name === activePageUrl) !== -1;
+  return label;
+}
 
-  if (isBookNavigation) pagesPath = bookPagesPath;
-  else pagesPath = zinePagesPath;
+function buildPath(pages) {
+  return `/${pages.join("/")}`;
+}
 
-  const currentPageIndex = pagesPath.findIndex(
-    (page) => page.name === activePageUrl
-  );
-
-  const previousPages = pagesPath.slice(0, currentPageIndex);
+function Breadcrumb({ absolutePath }) {
+  const pathItems = splitPages(absolutePath);
+  const currentPagePath = pathItems.pop();
 
   return (
     <div className="breadcrumb">
       <ol className="flex items-center whitespace-nowrap">
-        {previousPages.map((page) => {
+        {pathItems.map((pathItem, index) => {
           return (
-            <li className="inline-flex items-center" key={page.name}>
-              <Link className="previous-items" to={page.path}>
-                {page.label}
+            <li className="inline-flex items-center" key={pathItem}>
+              <Link
+                className="previous-items"
+                to={buildPath(pathItems.slice(0, index + 1))}
+              >
+                {formatLabel(pathItem)}
               </Link>
               <Divider />
             </li>
           );
         })}
         <li className="active-item" aria-current="page">
-          {pagesPath.at(currentPageIndex).label.toUpperCase()}
+          {formatLabel(currentPagePath)}
         </li>
       </ol>
     </div>
@@ -67,7 +50,7 @@ function Breadcrumb({ activePageUrl }) {
 }
 
 Breadcrumb.propTypes = {
-  activePageUrl: PropTypes.string.isRequired,
+  absolutePath: PropTypes.string.isRequired,
 };
 
 export default Breadcrumb;

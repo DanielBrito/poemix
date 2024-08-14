@@ -5,12 +5,11 @@ import Breadcrumb from "../components/Breadcrumb/Breadcrumb";
 
 function Books() {
   const location = useLocation();
-  const currentPage = location.pathname.split("/").pop();
 
   return (
     <>
       <div className="books-page">
-        <Breadcrumb activePageUrl={currentPage} />
+        <Breadcrumb absolutePath={location.pathname} />
         <div className="publication-listing">
           <Link
             className="link"

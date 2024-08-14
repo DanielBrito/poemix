@@ -1,14 +1,14 @@
 .breadcrumb {
-  margin-top: 10px;
+  margin-top: 20px;
 
   display: flex;
   justify-content: center;
 }
 
 .previous-items {
-  @apply flex items-center text-sm text-black hover:text-red-800  focus:outline-none focus:text-red-800;
+  @apply flex items-center text-sm text-black font-medium hover:text-gray-700  focus:outline-none focus:text-gray-700;
 }
 
 .active-item {
-  @apply inline-flex items-center text-sm font-semibold text-red-600;
+  @apply inline-flex items-center text-sm font-extrabold text-red-600;
 }

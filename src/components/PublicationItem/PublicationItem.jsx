@@ -6,7 +6,7 @@ function PublicationItem({ publication }) {
   return (
     <>
       <div className="wrapper">
-        <div className="w-full h-full inset-0 transition-transform transform hover:-translate-x-1 hover:-translate-y-1 duration-200 ease-out">
+        <div className="w-full h-full inset-0 transition-transform transform hover:-translate-x-0.5 hover:-translate-y-0.5 duration-200 ease-out">
           <Link to={publication.path}>
             <img
               src={publication.thumb}

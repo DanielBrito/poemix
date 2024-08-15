@@ -28,7 +28,7 @@ PublicationList.propTypes = {
   publications: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
-      thumb: PropTypes.object.isRequired,
+      thumb: PropTypes.string.isRequired,
       path: PropTypes.string.isRequired,
     })
   ),

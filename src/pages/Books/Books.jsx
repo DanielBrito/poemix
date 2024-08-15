@@ -1,25 +1,41 @@
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import {
   APP_BASE_URL,
   BOOKS_PATH,
   A_LER_VAZIOS_PATH,
+  PROTESTIZANDO_PATH,
 } from "../../constants/Paths";
 import "./Books.css";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
+import PublicationList from "../../components/PublicationList/PublicationList";
+import aLerVaziosThumb from "../../assets/books/a_ler_vazios.webp";
+import protestizandoThumb from "../../assets/books/protestizando.webp";
 
 function Books() {
   const location = useLocation();
+
+  const aLerVaziosPath = `${APP_BASE_URL}${BOOKS_PATH}${A_LER_VAZIOS_PATH}`;
+  const protestizandoPath = `${APP_BASE_URL}${BOOKS_PATH}${PROTESTIZANDO_PATH}`;
+  const books = [
+    {
+      name: "A Ler Vazios",
+      releasedAt: "30/07/2016",
+      thumb: aLerVaziosThumb,
+      path: aLerVaziosPath,
+    },
+    {
+      name: "Protestizando",
+      releasedAt: "05/02/2015",
+      thumb: protestizandoThumb,
+      path: protestizandoPath,
+    },
+  ];
 
   return (
     <div className="books-page">
       <Breadcrumb absolutePath={location.pathname} />
       <div className="publication-listing">
-        <Link
-          className="link"
-          to={`${APP_BASE_URL}${BOOKS_PATH}${A_LER_VAZIOS_PATH}`}
-        >
-          Ler A LER VAZIOS
-        </Link>
+        <PublicationList publications={books} />
       </div>
     </div>
   );

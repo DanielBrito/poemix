@@ -1,0 +1,30 @@
+.thumb {
+  border: 1px black solid;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.thumb:hover {
+  box-shadow: 3px 3px black;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.publication-title,
+.release-date {
+  text-align: center;
+}
+
+.publication-title {
+  margin-top: 10px;
+  font-weight: 800;
+}
+
+.release-date {
+  font-size: small;
+  color: rgb(100, 100, 100);
+}

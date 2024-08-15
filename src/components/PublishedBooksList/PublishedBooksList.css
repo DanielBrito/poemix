@@ -1,0 +1,15 @@
+.wrapper {
+  max-width: 500px;
+
+  margin: 0 auto;
+}
+
+.thumb {
+  border: 1px black solid;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.thumb:hover {
+  box-shadow: 5px 5px black;
+}

@@ -6,6 +6,7 @@ import {
 } from "../../constants/Paths";
 import "./Books.css";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
+import PublishedBooksList from "../../components/PublishedBooksList/PublishedBooksList";
 
 function Books() {
   const location = useLocation();
@@ -20,6 +21,7 @@ function Books() {
         >
           Ler A LER VAZIOS
         </Link>
+        <PublishedBooksList />
       </div>
     </div>
   );

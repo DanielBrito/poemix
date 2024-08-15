@@ -3,13 +3,3 @@
 
   margin: 0 auto;
 }
-
-.thumb {
-  border: 1px black solid;
-
-  transition: all 0.2s ease-in-out;
-}
-
-.thumb:hover {
-  box-shadow: 5px 5px black;
-}

@@ -19,11 +19,13 @@ function Books() {
   const books = [
     {
       name: "A Ler Vazios",
+      releasedAt: "30/07/2016",
       thumb: aLerVaziosThumb,
       path: aLerVaziosPath,
     },
     {
       name: "Protestizando",
+      releasedAt: "05/02/2015",
       thumb: protestizandoThumb,
       path: protestizandoPath,
     },

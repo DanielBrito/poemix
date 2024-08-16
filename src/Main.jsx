@@ -13,7 +13,7 @@ import {
   ZINE_PATH,
   BOOKS_PATH,
   PROTESTIZANDO_1_PATH
-} from "./constants/Paths.js";
+} from "./constants/Routes.js";
 
 const router = createBrowserRouter([
   {

@@ -4,7 +4,7 @@ import PublicationItem from "../PublicationItem/PublicationItem";
 
 function PublicationList({ publications }) {
   return (
-    <div className="grid grid-cols-2 gap-5 p-3 wrapper">
+    <div className="grid grid-cols-2 gap-5 pt-0 pr-3 pb-3 pl-3 wrapper">
       {publications.map((publication) => {
         return (
           <PublicationItem publication={publication} key={publication.name} />

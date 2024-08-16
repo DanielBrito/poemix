@@ -1,11 +1,12 @@
 .breadcrumb {
   margin-top: 20px;
+  margin-bottom: 30px;
 
   display: flex;
   justify-content: center;
 }
 
-.previous-items {
+.previous-item {
   @apply flex items-center text-sm text-gray-600 font-medium hover:text-gray-900  focus:outline-none focus:text-gray-900;
 }
 

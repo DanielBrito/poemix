@@ -3,7 +3,7 @@ import {
   APP_BASE_URL,
   ZINE_PATH,
   PROTESTIZANDO_1_PATH,
-} from "../../constants/Paths";
+} from "../../constants/Routes";
 import "./Zines.css";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 

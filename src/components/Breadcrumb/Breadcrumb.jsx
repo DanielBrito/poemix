@@ -32,7 +32,7 @@ function Breadcrumb({ absolutePath }) {
           return (
             <li className="inline-flex items-center" key={pathItem}>
               <Link
-                className="previous-items"
+                className="previous-item"
                 to={buildPath(pathItems.slice(0, index + 1))}
               >
                 {formatLabel(pathItem)}

@@ -4,19 +4,16 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home/Home.jsx";
 import Zines from "./pages/Zines/Zines.jsx";
 import Protestizando1 from "./pages/Publication/zines/Protestizando1.jsx";
-import ALerVazios from "./pages/Publication/books/ALerVazios.jsx";
-import Protestizando from "./pages/Publication/books/Protestizando.jsx";
 import Books from "./pages/Books/Books.jsx";
 import Error from "./pages/Error/Error.jsx";
+import Publication from "./pages/Publication/Publication.jsx"
 import "./index.css";
 import {
   APP_BASE_URL,
   ZINE_PATH,
   BOOKS_PATH,
-  PROTESTIZANDO_1_PATH,
-  A_LER_VAZIOS_PATH,
-  PROTESTIZANDO_PATH,
-} from "./constants/Paths.js";
+  PROTESTIZANDO_1_PATH
+} from "./constants/Routes.js";
 
 const router = createBrowserRouter([
   {
@@ -37,12 +34,8 @@ const router = createBrowserRouter([
     element: <Books />,
   },
   {
-    path: `${APP_BASE_URL}${BOOKS_PATH}${A_LER_VAZIOS_PATH}`,
-    element: <ALerVazios />,
-  },
-  {
-    path: `${APP_BASE_URL}${BOOKS_PATH}${PROTESTIZANDO_PATH}`,
-    element: <Protestizando />,
+    path: `${APP_BASE_URL}${BOOKS_PATH}/:id`,
+    element: <Publication />,
   },
 ]);
 

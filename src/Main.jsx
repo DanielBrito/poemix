@@ -12,7 +12,6 @@ import {
   APP_BASE_URL,
   ZINE_PATH,
   BOOKS_PATH,
-  PROTESTIZANDO_1_PATH
 } from "./constants/Routes.js";
 
 const router = createBrowserRouter([
@@ -26,8 +25,8 @@ const router = createBrowserRouter([
     element: <Zines />,
   },
   {
-    path: `${APP_BASE_URL}${ZINE_PATH}${PROTESTIZANDO_1_PATH}`,
-    element: <Protestizando1 />,
+    path: `${APP_BASE_URL}${ZINE_PATH}/:id`,
+    element: <Publication />,
   },
   {
     path: `${APP_BASE_URL}${BOOKS_PATH}`,

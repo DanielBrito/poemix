@@ -5,11 +5,11 @@ import "./PublicationItem.css";
 function PublicationItem({ publication }) {
   return (
     <div className="wrapper">
-      <div className="w-full h-full inset-0 transition-transform transform hover:-translate-x-0.5 hover:-translate-y-0.5 duration-200 ease-out">
+      <div className="w-full h-full">
         <Link to={publication.path}>
           <img
             src={publication.thumb}
-            className="w-full h-full object-cover thumb"
+            className="w-full h-full object-cover thumb relative z-0 transition-all duration-300 hover:scale-105 hover:shadow-md hover:shadow-gray-400"
           />
         </Link>
       </div>

@@ -1,10 +1,85 @@
 const PROTESTIZANDO_FILE_SRC = "https://drive.google.com/file/d/1ElARBmlzf9LhCVEouHyaIolIYq7GuN6h/preview"
 const A_LER_VAZIOS_FILE_SRC = "https://drive.google.com/file/d/1Z3HHdBzm0jJyX3WnOPQIwK0kFM-HUk4g/preview"
 
+const PROTESTIZANDO_1_FILE_SRC = "https://drive.google.com/file/d/0BwdGPIUP6mG3c1hYakV4ZFFOcms/preview"
+const PROTESTIZANDO_2_FILE_SRC = "https://drive.google.com/file/d/0BwdGPIUP6mG3bnR0VXg2S2lFSDQ/preview"
+const PROTESTIZANDO_3_FILE_SRC = "https://drive.google.com/file/d/0BwdGPIUP6mG3aWo1LUpQWEUzdW8/preview"
+const PROTESTIZANDO_4_FILE_SRC = "https://drive.google.com/file/d/0BwdGPIUP6mG3dHRjNlE5c0NyUTA/preview"
+const PROTESTIZANDO_5_FILE_SRC = "https://drive.google.com/file/d/0BwdGPIUP6mG3OXZNRkVqdVB6Nkk/preview"
+const PROTESTIZANDO_6_FILE_SRC = "https://drive.google.com/file/d/0BwdGPIUP6mG3Q0Z4dmZUUHV1R28/preview"
+const PROTESTIZANDO_7_FILE_SRC = "https://drive.google.com/file/d/0BwdGPIUP6mG3TFJXbWEzOUlzUUk/preview"
+const PROTESTIZANDO_8_FILE_SRC = "https://drive.google.com/file/d/0BwdGPIUP6mG3N2EtNE9SeUxMS28/preview"
+const PROTESTIZANDO_9_FILE_SRC = "https://drive.google.com/file/d/0BwdGPIUP6mG3SHpmVG9BLWNIM2s/preview"
+const PROTESTIZANDO_10_FILE_SRC = "https://drive.google.com/file/d/0BwdGPIUP6mG3QkFuRFRyRWduTkU/preview"
+const PROTESTIZANDO_11_FILE_SRC = "https://drive.google.com/file/d/0BwdGPIUP6mG3a1FBMG1fbi1LYlE/preview"
+const PROTESTIZANDO_12_FILE_SRC = "https://drive.google.com/file/d/0BwdGPIUP6mG3RFlOQkItNkRyckE/preview"
+const PROTESTIZANDO_13_FILE_SRC = "https://drive.google.com/file/d/0BwdGPIUP6mG3VENtcUNBeDE1aWc/preview"
+const PROTESTIZANDO_14_FILE_SRC = "https://drive.google.com/file/d/0BwdGPIUP6mG3RFRCNWxhYl9fSkk/preview"
+const PROTESTIZANDO_15_FILE_SRC = "https://drive.google.com/file/d/0BwdGPIUP6mG3RWh2cS1oNENjVVE/preview"
+const PROTESTIZANDO_16_FILE_SRC = "https://drive.google.com/file/d/0BwdGPIUP6mG3SlAzWXNXbDcyNzA/preview"
+const PROTESTIZANDO_17_FILE_SRC = "https://drive.google.com/file/d/0BwdGPIUP6mG3a3VpT1NjZ1ZXVEU/preview"
+const PROTESTIZANDO_18_FILE_SRC = "https://drive.google.com/file/d/0BwdGPIUP6mG3ZVpmWUV2RTRPdGs/preview"
+const PROTESTIZANDO_19_FILE_SRC = "https://drive.google.com/file/d/0BwdGPIUP6mG3MThsMjgyRFR2WTg/preview"
+const PROTESTIZANDO_20_FILE_SRC = "https://drive.google.com/file/d/0BwdGPIUP6mG3X0gyR0x2UjBzbHc/preview"
+const PROTESTIZANDO_21_FILE_SRC = "https://drive.google.com/file/d/0BwdGPIUP6mG3WGg3R0dGZldWWm8/preview"
+const PROTESTIZANDO_22_FILE_SRC = "https://drive.google.com/file/d/0BwdGPIUP6mG3UU8zMFV4MmVVUk0/preview"
+const PROTESTIZANDO_23_FILE_SRC = "https://drive.google.com/file/d/0BwdGPIUP6mG3VkZ5WV8xSXF3MG8/preview"
+const PROTESTIZANDO_24_FILE_SRC = "https://drive.google.com/file/d/1_75ZS0zDO605n8XzkkZJ21Gt4MdrTNwA/preview"
+const PROTESTIZANDO_25_FILE_SRC = "https://drive.google.com/file/d/18Vpw9Tx9muDopTIJYoUGgfCbf2l6aOFw/preview"
+const PROTESTIZANDO_26_FILE_SRC = "https://drive.google.com/file/d/19fF_g1HtFNO8gnqWN1ZR8CeZFYEd9aaU/preview"
+const PROTESTIZANDO_27_FILE_SRC = "https://drive.google.com/file/d/1saX8tz4Ut0IwZvowanGVNycgi84cf-0u/preview"
+const PROTESTIZANDO_28_FILE_SRC = "https://drive.google.com/file/d/17aeUGu2QwjUyUK4HWiyvvSbuR8zETF-j/preview"
+const PROTESTIZANDO_29_FILE_SRC = "https://drive.google.com/file/d/1Te0sZIwSUUa9eOjTb6VRB4y6MwdZmeqd/preview"
+const PROTESTIZANDO_30_FILE_SRC = "https://drive.google.com/file/d/1YMm3NchQChbULiBseXpTl1bOPkPgUv39/preview"
+const PROTESTIZANDO_31_FILE_SRC = "https://drive.google.com/file/d/12XR6vOpS6rRRJgNEDr7rBQ_OPKRcfwEx/preview"
+const PROTESTIZANDO_32_FILE_SRC = "https://drive.google.com/file/d/1aOc1wYm_8qZwIzXr9VinIJzLuQRcC89L/preview"
+const PROTESTIZANDO_33_FILE_SRC = "https://drive.google.com/file/d/1UMkXJSGT4I0V99co-pjaE0Ahy8nK-6tA/preview"
+const PROTESTIZANDO_34_FILE_SRC = "https://drive.google.com/file/d/1PZfC_KoynvewrDKH_9obgfuiGr9MNqmW/preview"
+const PROTESTIZANDO_35_FILE_SRC = "https://drive.google.com/file/d/1FF9gMYImd2BYE9bTqIZTFSqL3jHjMf_1/preview"
+const PROTESTIZANDO_36_FILE_SRC = "https://drive.google.com/file/d/1j3wcCtYzIw0bB3qjrDwlSg44LtDnmxZD/preview"
+const PROTESTIZANDO_37_FILE_SRC = "https://drive.google.com/file/d/1hcK8w3KuUdS_7weIYRaS-JiqJDA1nGuZ/preview"
+
 export function getFileSource(publicationId) {
     switch(publicationId) {
         case "protestizando": return PROTESTIZANDO_FILE_SRC
         case "a_ler_vazios": return A_LER_VAZIOS_FILE_SRC
+        case "protestizando_1": return PROTESTIZANDO_1_FILE_SRC
+        case "protestizando_2": return PROTESTIZANDO_2_FILE_SRC
+        case "protestizando_3": return PROTESTIZANDO_3_FILE_SRC
+        case "protestizando_4": return PROTESTIZANDO_4_FILE_SRC
+        case "protestizando_5": return PROTESTIZANDO_5_FILE_SRC
+        case "protestizando_6": return PROTESTIZANDO_6_FILE_SRC
+        case "protestizando_7": return PROTESTIZANDO_7_FILE_SRC
+        case "protestizando_8": return PROTESTIZANDO_8_FILE_SRC
+        case "protestizando_9": return PROTESTIZANDO_9_FILE_SRC
+        case "protestizando_10": return PROTESTIZANDO_10_FILE_SRC
+        case "protestizando_11": return PROTESTIZANDO_11_FILE_SRC
+        case "protestizando_12": return PROTESTIZANDO_12_FILE_SRC
+        case "protestizando_13": return PROTESTIZANDO_13_FILE_SRC
+        case "protestizando_14": return PROTESTIZANDO_14_FILE_SRC
+        case "protestizando_15": return PROTESTIZANDO_15_FILE_SRC
+        case "protestizando_16": return PROTESTIZANDO_16_FILE_SRC
+        case "protestizando_17": return PROTESTIZANDO_17_FILE_SRC
+        case "protestizando_18": return PROTESTIZANDO_18_FILE_SRC
+        case "protestizando_19": return PROTESTIZANDO_19_FILE_SRC
+        case "protestizando_20": return PROTESTIZANDO_20_FILE_SRC
+        case "protestizando_21": return PROTESTIZANDO_21_FILE_SRC
+        case "protestizando_22": return PROTESTIZANDO_22_FILE_SRC
+        case "protestizando_23": return PROTESTIZANDO_23_FILE_SRC
+        case "protestizando_24": return PROTESTIZANDO_24_FILE_SRC
+        case "protestizando_25": return PROTESTIZANDO_25_FILE_SRC
+        case "protestizando_26": return PROTESTIZANDO_26_FILE_SRC
+        case "protestizando_27": return PROTESTIZANDO_27_FILE_SRC
+        case "protestizando_28": return PROTESTIZANDO_28_FILE_SRC
+        case "protestizando_29": return PROTESTIZANDO_29_FILE_SRC
+        case "protestizando_30": return PROTESTIZANDO_30_FILE_SRC
+        case "protestizando_31": return PROTESTIZANDO_31_FILE_SRC
+        case "protestizando_32": return PROTESTIZANDO_32_FILE_SRC
+        case "protestizando_33": return PROTESTIZANDO_33_FILE_SRC
+        case "protestizando_34": return PROTESTIZANDO_34_FILE_SRC
+        case "protestizando_35": return PROTESTIZANDO_35_FILE_SRC
+        case "protestizando_36": return PROTESTIZANDO_36_FILE_SRC
+        case "protestizando_37": return PROTESTIZANDO_37_FILE_SRC
         default: "NOT FOUND"
     }
 }

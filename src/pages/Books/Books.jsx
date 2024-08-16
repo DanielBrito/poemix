@@ -12,7 +12,7 @@ function Books() {
     <div className="books-page">
       <Breadcrumb absolutePath={location.pathname} />
       <div className="books-list-wrapper">
-        <PublicationList publications={books} />
+        <PublicationList publications={books} type={"book"} />
       </div>
     </div>
   );

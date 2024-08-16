@@ -5,7 +5,7 @@ import "./Publication.css";
 
 function Publication() {
   const location = useLocation();
-  const {id} = useParams()
+  const { id } = useParams()
 
   return (
     <div className="publication-reader">

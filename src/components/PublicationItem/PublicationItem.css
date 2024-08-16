@@ -21,10 +21,12 @@
 
 .publication-title {
   margin-top: 10px;
-  font-weight: 800;
+  font-weight: bold;
+  font-size: 0.8rem;
 }
 
 .release-date {
-  font-size: small;
+  margin-bottom: 15px;
+  font-size: 0.7rem;
   color: rgb(100, 100, 100);
 }

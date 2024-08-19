@@ -7,4 +7,3 @@ export function formatFromSnakeCase(publicationId) {
   
     return label;
   }
-  

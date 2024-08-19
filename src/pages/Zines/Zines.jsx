@@ -1,4 +1,5 @@
-import { Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "./Zines.css";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import { getZines } from "../../constants/ZinesInfo"
@@ -7,6 +8,10 @@ import PublicationList from "../../components/PublicationList/PublicationList";
 function Zines() {
   const location = useLocation();
   const zines = getZines();
+
+  useEffect(() => {
+    document.title = "ZINES | Daniel Brito"
+  }, []);
 
   return (
     <div className="zine-page">

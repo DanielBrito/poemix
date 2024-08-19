@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import "./Books.css";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
@@ -6,7 +7,11 @@ import { getBooks } from "../../constants/BooksInfo";
 
 function Books() {
   const location = useLocation();
-  const books = getBooks()
+  const books = getBooks();
+
+  useEffect(() => {
+    document.title = "LIVROS | Daniel Brito"
+  }, []);
 
   return (
     <div className="books-page">

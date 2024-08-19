@@ -2,19 +2,10 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./Breadcrumb.css";
 import Divider from "./Divider/Divider";
+import { formatFromSnakeCase } from "../../util/format"
 
 function splitPages(absolutePath) {
   return absolutePath.split("/").filter((item) => item !== "");
-}
-
-function formatLabel(snakeCaseText) {
-  var label = snakeCaseText.replace(/_/g, " ").toUpperCase();
-
-  if (label.match(RegExp("PROTESTIZANDO\\s[0-9]+"))) {
-    return label.replace(" ", " #");
-  }
-
-  return label;
 }
 
 function buildPath(pages) {
@@ -35,14 +26,14 @@ function Breadcrumb({ absolutePath }) {
                 className="previous-item"
                 to={buildPath(pathItems.slice(0, index + 1))}
               >
-                {formatLabel(pathItem)}
+                {formatFromSnakeCase(pathItem)}
               </Link>
               <Divider />
             </li>
           );
         })}
         <li className="active-item" aria-current="page">
-          {formatLabel(currentPagePath)}
+          {formatFromSnakeCase(currentPagePath)}
         </li>
       </ol>
     </div>

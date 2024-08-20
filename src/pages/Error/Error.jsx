@@ -1,4 +1,6 @@
 import { useRouteError } from "react-router-dom";
+import errorImage from "../../assets/general/not_found.webp";
+import "./Error.css";
 
 export default function ErrorPage() {
   const error = useRouteError();
@@ -6,11 +8,8 @@ export default function ErrorPage() {
 
   return (
     <div id="error-page">
-      <h1>Opa!</h1>
-      <p>Uma erro ocorreu ao carregar a página:</p>
-      <p>
-        <i>{error.statusText || error.message}</i>
-      </p>
+      <img className="not-found-image" src={errorImage} width={"424px"} height={"333px"} />
+      <p className="message">Página não encontrada</p>
     </div>
   );
 }

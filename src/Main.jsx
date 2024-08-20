@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home/Home.jsx";
 import Zines from "./pages/Zines/Zines.jsx";
-import Protestizando1 from "./pages/Publication/zines/Protestizando1.jsx";
 import Books from "./pages/Books/Books.jsx";
 import Error from "./pages/Error/Error.jsx";
 import Publication from "./pages/Publication/Publication.jsx"

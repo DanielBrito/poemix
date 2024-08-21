@@ -9,14 +9,14 @@ function PublicationItem({ publication }) {
         <Link to={publication.path}>
           <img
             src={publication.thumb}
-            className="w-full h-full object-cover thumb relative z-0 transition-all duration-300 hover:scale-105 hover:shadow-md hover:shadow-gray-400"
+            className="w-full h-full object-cover thumb relative z-0 transition-all duration-300 hover:scale-100 hover:shadow-md hover:shadow-gray-400"
             width={"339px"}
             height={"480px"}
           />
         </Link>
       </div>
-      <p className="publication-title">{publication.name.toUpperCase()}</p>
-      <p className="release-date">{publication.releasedAt}</p>
+      <p className="publication-title text-sm font-bold font-sans">{publication.name.toUpperCase()}</p>
+      <p className="release-date text-xs font-semibold font-sans">{publication.releasedAt}</p>
     </div>
   );
 }

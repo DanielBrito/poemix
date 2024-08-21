@@ -9,16 +9,16 @@ import {
 
 const books = [
     {
-      name: "A Ler Vazios",
-      releasedAt: "30/07/2016",
-      thumb: aLerVaziosThumb,
-      path: `${APP_BASE_URL}${BOOKS_PATH}${A_LER_VAZIOS_PATH}`
-    },
-    {
       name: "Protestizando",
       releasedAt: "05/02/2015",
       thumb: protestizandoThumb,
       path: `${APP_BASE_URL}${BOOKS_PATH}${PROTESTIZANDO_PATH}`
+    },
+    {
+      name: "A Ler Vazios",
+      releasedAt: "30/07/2016",
+      thumb: aLerVaziosThumb,
+      path: `${APP_BASE_URL}${BOOKS_PATH}${A_LER_VAZIOS_PATH}`
     },
   ];
 

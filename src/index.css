@@ -33,6 +33,10 @@ body {
   -moz-animation: fadein 1s; /* Firefox */
   -o-animation: fadein 1s; /* Opera */
   animation: fadein 1s;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif;
 }
 
 /* Page Transition: */

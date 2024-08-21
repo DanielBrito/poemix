@@ -2,10 +2,10 @@ import PropTypes from "prop-types";
 import "./PublicationList.css";
 import PublicationItem from "../PublicationItem/PublicationItem";
 
-const bookWrapperStyle = `grid gap-2 grid-cols-2 pt-2 max-w-[468px] wrapper`;
-const zineWrapperStyle = `grid gap-2 grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 pt-2 max-w-[1400px] wrapper`
-
 function getProperStyle(publicationType) {
+  const bookWrapperStyle = `grid gap-2 grid-cols-2 pt-2 max-w-[468px] wrapper`;
+  const zineWrapperStyle = `grid gap-2 grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 pt-2 max-w-[1400px] wrapper`
+
   switch(publicationType){
     case "book": return bookWrapperStyle
     case "zine": return zineWrapperStyle

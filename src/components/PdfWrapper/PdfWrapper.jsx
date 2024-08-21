@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { getFileSource } from "../../constants/FilesSource";
+import { getFileSource } from "../../data/FilesSource";
 import "./PdfWrapper.css"
 
 function PdfWrapper({id}) {

@@ -1,5 +1,5 @@
 .button-block {
-  @apply w-24 relative inline-block px-4 py-2 font-medium;
+  @apply w-24 relative inline-block px-4 py-2 text-base font-sans font-bold;
 }
 
 .button-block-default {

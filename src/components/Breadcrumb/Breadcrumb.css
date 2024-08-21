@@ -7,9 +7,9 @@
 }
 
 .previous-item {
-  @apply flex items-center text-base text-gray-600 font-medium hover:text-gray-700 hover:font-bold focus:outline-none focus:text-gray-900;
+  @apply flex items-center text-sm text-gray-600 font-medium hover:text-gray-700 hover:font-bold focus:outline-none focus:text-gray-900;
 }
 
 .active-item {
-  @apply inline-flex items-center text-base font-extrabold text-red-600;
+  @apply inline-flex items-center text-sm font-extrabold text-red-600;
 }

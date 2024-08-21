@@ -4,7 +4,6 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home/Home.jsx";
 import Zines from "./pages/Zines/Zines.jsx";
 import Books from "./pages/Books/Books.jsx";
-import Error from "./pages/Error/Error.jsx";
 import Publication from "./pages/Publication/Publication.jsx"
 import "./index.css";
 import {
@@ -17,7 +16,6 @@ const router = createBrowserRouter([
   {
     path: APP_BASE_URL,
     element: <Home />,
-    errorElement: <Error />,
   },
   {
     path: `${APP_BASE_URL}${ZINE_PATH}`,

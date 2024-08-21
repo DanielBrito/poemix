@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation, useParams } from "react-router-dom";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import PdfWrapper from "../../components/PdfWrapper/PdfWrapper";
-import { formatFromSnakeCase } from "../../util/format"
+import { idToTitle } from "../../util/Format"
 import "./Publication.css";
 
 function Publication() {
@@ -11,7 +11,7 @@ function Publication() {
 
   useEffect(() => {
     const publicationName = location.pathname.split("/").pop()
-    document.title = `${formatFromSnakeCase(publicationName)} | Daniel Brito`
+    document.title = `${idToTitle(publicationName)} | Daniel Brito`
   }, []);
 
   return (

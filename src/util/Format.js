@@ -1,4 +1,4 @@
-export function formatFromSnakeCase(publicationId) {
+export function idToTitle(publicationId) {
     var label = publicationId.replace(/_/g, " ").toUpperCase();
   
     if (label.match(RegExp("PROTESTIZANDO\\s[0-9]+"))) {

@@ -6,11 +6,11 @@ import Zines from "./pages/Zines/Zines.jsx";
 import Books from "./pages/Books/Books.jsx";
 import Publication from "./pages/Publication/Publication.jsx"
 import "./index.css";
-import {
-  APP_BASE_URL,
-  ZINE_PATH,
-  BOOKS_PATH,
-} from "./constants/Routes.js";
+import { getRoutes } from "./routes/Routes.js";
+
+const { APP_BASE_URL, ZINES_PATH, BOOKS_PATH } = getRoutes()
+const zinesPathPrefix = `${APP_BASE_URL}${ZINES_PATH}`
+const booksPathPrefix = `${APP_BASE_URL}${BOOKS_PATH}`
 
 const router = createBrowserRouter([
   {
@@ -18,19 +18,19 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: `${APP_BASE_URL}${ZINE_PATH}`,
+    path: `${zinesPathPrefix}`,
     element: <Zines />,
   },
   {
-    path: `${APP_BASE_URL}${ZINE_PATH}/:id`,
+    path: `${zinesPathPrefix}/:id`,
     element: <Publication />,
   },
   {
-    path: `${APP_BASE_URL}${BOOKS_PATH}`,
+    path: `${booksPathPrefix}`,
     element: <Books />,
   },
   {
-    path: `${APP_BASE_URL}${BOOKS_PATH}/:id`,
+    path: `${booksPathPrefix}/:id`,
     element: <Publication />,
   },
 ]);

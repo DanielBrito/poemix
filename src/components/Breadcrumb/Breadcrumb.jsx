@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./Breadcrumb.css";
 import Divider from "./Divider/Divider";
-import { formatFromSnakeCase } from "../../util/format"
+import { idToTitle } from "../../util/Format"
 
 function splitPages(absolutePath) {
   return absolutePath.split("/").filter((item) => item !== "");
@@ -26,14 +26,14 @@ function Breadcrumb({ absolutePath }) {
                 className="previous-item"
                 to={buildPath(pathItems.slice(0, index + 1))}
               >
-                {formatFromSnakeCase(pathItem)}
+                {idToTitle(pathItem)}
               </Link>
               <Divider />
             </li>
           );
         })}
         <li className="active-item" aria-current="page">
-          {formatFromSnakeCase(currentPagePath)}
+          {idToTitle(currentPagePath)}
         </li>
       </ol>
     </div>

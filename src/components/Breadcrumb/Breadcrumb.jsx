@@ -1,26 +1,31 @@
-import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
-import "./Breadcrumb.css";
-import Divider from "./Divider/Divider";
-import { idToTitle } from "../../util/Format"
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
-function splitPages(absolutePath) {
-  return absolutePath.split("/").filter((item) => item !== "");
-}
+import './Breadcrumb.css';
+import { idToTitle } from '../../util/Format';
 
-function buildPath(pages) {
-  return `/${pages.join("/")}`;
-}
+import { Divider } from './Divider';
 
-function getProperTitle(index) {
-  switch(index) {
-    case 0: return "Voltar ao início"
-    case 1: return "Ver publicações"
-    default: return ""
+const splitPages = (absolutePath) => {
+  return absolutePath.split('/').filter((item) => item !== '');
+};
+
+const buildPath = (pages) => {
+  return `/${pages.join('/')}`;
+};
+
+const getProperTitle = (index) => {
+  switch (index) {
+    case 0:
+      return 'Voltar ao início';
+    case 1:
+      return 'Ver publicações';
+    default:
+      return '';
   }
-}
+};
 
-function Breadcrumb({ absolutePath }) {
+export const Breadcrumb = ({ absolutePath }) => {
   const pathItems = splitPages(absolutePath);
   const currentPagePath = pathItems.pop();
 
@@ -47,10 +52,8 @@ function Breadcrumb({ absolutePath }) {
       </ol>
     </div>
   );
-}
+};
 
 Breadcrumb.propTypes = {
   absolutePath: PropTypes.string.isRequired,
 };
-
-export default Breadcrumb;

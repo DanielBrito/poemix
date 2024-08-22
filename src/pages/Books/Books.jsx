@@ -1,16 +1,17 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import "./Books.css";
-import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
-import PublicationList from "../../components/PublicationList/PublicationList";
-import { getBooks } from "../../data/Books";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
-function Books() {
+import './Books.css';
+import { Breadcrumb } from '../../components/Breadcrumb';
+import { PublicationList } from '../../components/PublicationList';
+import { getBooks } from '../../data/Books';
+
+export const Books = () => {
   const location = useLocation();
   const books = getBooks();
 
   useEffect(() => {
-    document.title = "LIVROS | Daniel Brito"
+    document.title = 'LIVROS | Daniel Brito';
   }, []);
 
   return (
@@ -21,6 +22,4 @@ function Books() {
       </div>
     </>
   );
-}
-
-export default Books;
+};

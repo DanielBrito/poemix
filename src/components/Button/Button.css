@@ -15,5 +15,5 @@
 }
 
 .button-link {
-  @apply my-0 mx-5
+  @apply my-0 mx-5;
 }

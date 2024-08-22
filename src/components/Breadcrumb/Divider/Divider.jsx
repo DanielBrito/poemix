@@ -1,6 +1,6 @@
-import "./Divider.css";
+import './Divider.css';
 
-function Divider() {
+export const Divider = () => {
   return (
     <>
       <svg
@@ -19,6 +19,4 @@ function Divider() {
       </svg>
     </>
   );
-}
-
-export default Divider;
+};

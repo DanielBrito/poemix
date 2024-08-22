@@ -1,16 +1,17 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Home from "./pages/Home/Home.jsx";
-import Zines from "./pages/Zines/Zines.jsx";
-import Books from "./pages/Books/Books.jsx";
-import Publication from "./pages/Publication/Publication.jsx"
-import "./index.css";
-import { getRoutes } from "./routes/Routes.js";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-const { APP_BASE_URL, ZINES_PATH, BOOKS_PATH } = getRoutes()
-const zinesPathPrefix = `${APP_BASE_URL}${ZINES_PATH}`
-const booksPathPrefix = `${APP_BASE_URL}${BOOKS_PATH}`
+import { Books } from './pages/Books';
+import { Home } from './pages/Home';
+import { Publication } from './pages/Publication';
+import { Zines } from './pages/Zines';
+import './index.css';
+import { getRoutes } from './routes/Routes.js';
+
+const { APP_BASE_URL, ZINES_PATH, BOOKS_PATH } = getRoutes();
+const zinesPathPrefix = `${APP_BASE_URL}${ZINES_PATH}`;
+const booksPathPrefix = `${APP_BASE_URL}${BOOKS_PATH}`;
 
 const router = createBrowserRouter([
   {
@@ -35,8 +36,8 @@ const router = createBrowserRouter([
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </React.StrictMode>,
 );

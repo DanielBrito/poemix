@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
-import "./PublicationItem.css";
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import './PublicationItem.css';
 
-function PublicationItem({ publication }) {
+export const PublicationItem = ({ publication }) => {
   return (
     <div className="publication-item-wrapper">
       <div className="thumb-wrapper">
@@ -13,6 +13,7 @@ function PublicationItem({ publication }) {
             width="339px"
             height="480px"
             title={`Ler ${publication.name.toUpperCase()}`}
+            alt={publication.altText}
           />
         </Link>
       </div>
@@ -20,15 +21,14 @@ function PublicationItem({ publication }) {
       <p className="publication-release-date">{publication.releasedAt}</p>
     </div>
   );
-}
+};
 
 PublicationItem.propTypes = {
   publication: PropTypes.shape({
     name: PropTypes.string.isRequired,
     releasedAt: PropTypes.string.isRequired,
     thumb: PropTypes.string.isRequired,
-    path: PropTypes.string.isRequired
+    path: PropTypes.string.isRequired,
+    altText: PropTypes.string.isRequired,
   }),
 };
-
-export default PublicationItem;

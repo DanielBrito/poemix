@@ -1,16 +1,16 @@
-import { useEffect } from "react";
-import Button from "../../components/Button/Button";
-import Logo from "../../components/Logo/Logo";
-import "./Home.css";
-import { getRoutes } from "../../routes/Routes";
-import ButtonsWrapper from "../../components/ButtonsWrapper/ButtonsWrapper";
-import React from "react";
+import { React, useEffect } from 'react';
 
-function Home() {
+import { Button } from '../../components/Button';
+import { ButtonsWrapper } from '../../components/ButtonsWrapper';
+import { Logo } from '../../components/Logo';
+import './Home.css';
+import { getRoutes } from '../../routes/Routes';
+
+export const Home = () => {
   const { APP_BASE_URL, ZINES_PATH, BOOKS_PATH } = getRoutes();
 
   useEffect(() => {
-    document.title = "POEMIX | Daniel Brito"
+    document.title = 'POEMIX | Daniel Brito';
   }, []);
 
   return (
@@ -22,6 +22,4 @@ function Home() {
       </ButtonsWrapper>
     </div>
   );
-}
-
-export default Home;
+};

@@ -11,7 +11,7 @@
 
 - Add publication info to `src/data/Books.js` or `src/data/Zines.js`:
 
-´´´json
+```json
 ...
 {
   name: 'New Publication',
@@ -19,6 +19,5 @@
   thumb: thumbs.NEW_PUBLICATION.image,
   path: `${prefix}${routes.NEW_PUBLICATION_PATH}`,
   altText: thumbs.NEW_PUBLICATION.altText,
-},
-...
-´´´
+}
+```

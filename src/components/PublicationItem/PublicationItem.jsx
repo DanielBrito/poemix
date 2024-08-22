@@ -6,12 +6,13 @@ function PublicationItem({ publication }) {
   return (
     <div className="publication-item-wrapper">
       <div className="thumb-wrapper">
-        <Link to={publication.path} title={`Ler ${publication.name.toUpperCase()}`}>
+        <Link to={publication.path}>
           <img
             src={publication.thumb}
             className="publication-thumb"
             width={"339px"}
             height={"480px"}
+            title={`Ler ${publication.name.toUpperCase()}`}
           />
         </Link>
       </div>

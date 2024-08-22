@@ -6,7 +6,7 @@ function PublicationItem({ publication }) {
   return (
     <div className="publication-item-wrapper">
       <div className="thumb-wrapper">
-        <Link to={publication.path}>
+        <Link to={publication.path} role={"button"}>
           <img
             src={publication.thumb}
             className="publication-thumb"

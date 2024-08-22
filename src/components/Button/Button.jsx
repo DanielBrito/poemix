@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./Button.css";
 
-function Button({ url, text }) {
+function Button({ url, text, title }) {
   return (
-    <Link className="button-link" to={url}>
+    <Link className="button-link" to={url} title={title}>
       <div className="button-block group">
         <span className="button-block-hover"></span>
         <span className="button-block-default"></span>
@@ -17,6 +17,7 @@ function Button({ url, text }) {
 Button.propTypes = {
   url: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default Button;

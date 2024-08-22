@@ -12,6 +12,14 @@ function buildPath(pages) {
   return `/${pages.join("/")}`;
 }
 
+function getProperTitle(index) {
+  switch(index) {
+    case 0: return "Voltar ao início"
+    case 1: return "Ver publicações"
+    default: return ""
+  }
+}
+
 function Breadcrumb({ absolutePath }) {
   const pathItems = splitPages(absolutePath);
   const currentPagePath = pathItems.pop();
@@ -25,6 +33,7 @@ function Breadcrumb({ absolutePath }) {
               <Link
                 className="previous-item"
                 to={buildPath(pathItems.slice(0, index + 1))}
+                title={getProperTitle(index)}
               >
                 {idToTitle(pathItem)}
               </Link>

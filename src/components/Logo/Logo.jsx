@@ -4,7 +4,7 @@ import poemixLogo from "../../assets/homepage/poemix_logo.webp";
 function Logo() {
   return (
     <div width={"739px"} height={"263px"} className="max-w-[600px]">
-      <Link to={"https://danielbrito.github.io/projetos/#poemix"} target="_blank" rel="noopener noreferrer">
+      <Link to={"https://danielbrito.github.io/projetos/#poemix"} target="_blank" rel="noopener noreferrer" title="Saiba mais">
         <img src={poemixLogo} id="logo" alt="Poemix logo" width={"739px"} height={"263px"} />
       </Link>
     </div>

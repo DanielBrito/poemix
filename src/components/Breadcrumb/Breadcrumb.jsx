@@ -17,11 +17,11 @@ function Breadcrumb({ absolutePath }) {
   const currentPagePath = pathItems.pop();
 
   return (
-    <div className="breadcrumb">
-      <ol className="flex items-center whitespace-nowrap">
+    <div className="breadcrumb-wrapper">
+      <ol className="nav-list">
         {pathItems.map((pathItem, index) => {
           return (
-            <li className="inline-flex items-center" key={pathItem}>
+            <li className="nav-item" key={pathItem}>
               <Link
                 className="previous-item"
                 to={buildPath(pathItems.slice(0, index + 1))}

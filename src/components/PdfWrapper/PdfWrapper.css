@@ -1,0 +1,11 @@
+.pdf-wrapper {
+    @apply mx-auto w-full max-w-[850px] h-full
+}
+
+.pdf-iframe {
+    @apply h-full w-full border border-solid border-black bg-gray-100 
+}
+
+#pdf-iframe {
+    height: calc(100vh - 95px);
+}

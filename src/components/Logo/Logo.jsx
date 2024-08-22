@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import poemixLogo from "../../assets/homepage/poemix_logo.webp";
-import "./Logo.css";
 
 function Logo() {
   return (

@@ -4,19 +4,19 @@ import "./PublicationItem.css";
 
 function PublicationItem({ publication }) {
   return (
-    <div className="wrapper">
-      <div className="w-full h-full bg-gray-100">
+    <div className="publication-item-wrapper">
+      <div className="thumb-wrapper">
         <Link to={publication.path}>
           <img
             src={publication.thumb}
-            className="w-full h-full object-cover thumb relative z-0 transition-all duration-300 hover:scale-100 hover:shadow-md hover:shadow-gray-400"
+            className="publication-thumb"
             width={"339px"}
             height={"480px"}
           />
         </Link>
       </div>
-      <p className="publication-title text-sm font-bold font-sans">{publication.name.toUpperCase()}</p>
-      <p className="release-date text-xs font-semibold font-sans">{publication.releasedAt}</p>
+      <p className="publication-title">{publication.name.toUpperCase()}</p>
+      <p className="publication-release-date">{publication.releasedAt}</p>
     </div>
   );
 }

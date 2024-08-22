@@ -1,9 +1,6 @@
 export function idToTitle(publicationId) {
-    var label = publicationId.replace(/_/g, " ").toUpperCase();
-  
-    if (label.match(RegExp("PROTESTIZANDO\\s[0-9]+"))) {
-      return label.replace(" ", " #");
-    }
-  
-    return label;
+    const normalized = publicationId.replace(/_/g, " ").toUpperCase();
+    const isZine = normalized.match(RegExp("PROTESTIZANDO\\s[0-9]+"))
+
+    return isZine ? normalized.replace(" ", " #") : normalized
   }

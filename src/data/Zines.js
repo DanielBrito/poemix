@@ -109,14 +109,14 @@ const zines = [
   },
   {
     name: 'PROTESTIZANDO #15',
-    releasedAt: '06/02/17',
+    releasedAt: '06/02/2017',
     thumb: thumbs.PROTESTIZANDO_15.image,
     path: `${zinesPathPrefix}${routes.PROTESTIZANDO_15_PATH}`,
     altText: thumbs.PROTESTIZANDO_1.altText,
   },
   {
     name: 'PROTESTIZANDO #16',
-    releasedAt: '15/03/17',
+    releasedAt: '15/03/2017',
     thumb: thumbs.PROTESTIZANDO_16.image,
     path: `${zinesPathPrefix}${routes.PROTESTIZANDO_16_PATH}`,
     altText: thumbs.PROTESTIZANDO_1.altText,

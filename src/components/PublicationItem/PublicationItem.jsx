@@ -4,7 +4,7 @@ import "./PublicationItem.css";
 
 function PublicationItem({ publication }) {
   return (
-    <div className="publication-wrapper">
+    <div className="publication-item-wrapper">
       <div className="thumb-wrapper">
         <Link to={publication.path}>
           <img

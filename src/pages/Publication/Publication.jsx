@@ -15,7 +15,7 @@ function Publication() {
   }, []);
 
   return (
-    <div className="publication-reader">
+    <div className="publication-wrapper">
       <Breadcrumb absolutePath={location.pathname} />
       <PdfWrapper id={id} />
     </div>

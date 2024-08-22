@@ -14,12 +14,12 @@ function Zines() {
   }, []);
 
   return (
-    <div className="zine-page">
+    <>
       <Breadcrumb absolutePath={location.pathname} />
       <div className="zines-list-wrapper">
         <PublicationList publications={zines} type={"zine"} />
       </div>
-    </div>
+    </>
   );
 }
 

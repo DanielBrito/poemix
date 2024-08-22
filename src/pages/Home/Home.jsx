@@ -14,7 +14,7 @@ function Home() {
   }, []);
 
   return (
-    <div id="wrapper">
+    <div className="home-wrapper">
       <Logo />
       <ButtonsWrapper>
         <Button url={`${APP_BASE_URL}${ZINES_PATH}`} text={"Zines"} />

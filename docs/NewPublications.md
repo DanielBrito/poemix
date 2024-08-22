@@ -11,7 +11,7 @@
 
 - Add publication info to `src/data/Books.js` or `src/data/Zines.js`:
 
-```json
+```js
 ...
 {
   name: 'New Publication',

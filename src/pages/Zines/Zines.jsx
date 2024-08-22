@@ -2,11 +2,11 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import './Zines.css';
-import Breadcrumb from '../../components/Breadcrumb/Breadcrumb';
-import PublicationList from '../../components/PublicationList/PublicationList';
+import { Breadcrumb } from '../../components/Breadcrumb';
+import { PublicationList } from '../../components/PublicationList';
 import { getZines } from '../../data/Zines';
 
-const Zines = () => {
+export const Zines = () => {
   const location = useLocation();
   const zines = getZines();
 
@@ -23,5 +23,3 @@ const Zines = () => {
     </>
   );
 };
-
-export default Zines;

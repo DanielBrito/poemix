@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import './PublicationItem.css';
 
-const PublicationItem = ({ publication }) => {
+export const PublicationItem = ({ publication }) => {
   return (
     <div className="publication-item-wrapper">
       <div className="thumb-wrapper">
@@ -32,5 +32,3 @@ PublicationItem.propTypes = {
     altText: PropTypes.string.isRequired,
   }),
 };
-
-export default PublicationItem;

@@ -1,6 +1,6 @@
 import './Divider.css';
 
-const Divider = () => {
+export const Divider = () => {
   return (
     <>
       <svg
@@ -19,6 +19,4 @@ const Divider = () => {
       </svg>
     </>
   );
-}
-
-export default Divider;
+};

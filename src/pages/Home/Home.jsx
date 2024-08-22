@@ -1,12 +1,12 @@
 import { React, useEffect } from 'react';
 
-import Button from '../../components/Button/Button';
-import ButtonsWrapper from '../../components/ButtonsWrapper/ButtonsWrapper';
-import Logo from '../../components/Logo/Logo';
+import { Button } from '../../components/Button';
+import { ButtonsWrapper } from '../../components/ButtonsWrapper';
+import { Logo } from '../../components/Logo';
 import './Home.css';
 import { getRoutes } from '../../routes/Routes';
 
-const Home = () => {
+export const Home = () => {
   const { APP_BASE_URL, ZINES_PATH, BOOKS_PATH } = getRoutes();
 
   useEffect(() => {
@@ -23,5 +23,3 @@ const Home = () => {
     </div>
   );
 };
-
-export default Home;

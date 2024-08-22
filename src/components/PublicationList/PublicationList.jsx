@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 import './PublicationList.css';
-import PublicationItem from '../PublicationItem/PublicationItem';
+import { PublicationItem } from '../PublicationItem';
 
 const getProperStyle = (publicationType) => {
   const bookWrapperStyle = `grid gap-5 grid-cols-2 pt-2 max-w-[468px] list-wrapper`;
@@ -15,7 +15,7 @@ const getProperStyle = (publicationType) => {
   }
 };
 
-const PublicationList = ({ publications, type }) => {
+export const PublicationList = ({ publications, type }) => {
   const pulicationsReversed = [...publications].reverse();
   const style = getProperStyle(type);
 
@@ -40,5 +40,3 @@ PublicationList.propTypes = {
   ),
   type: PropTypes.string.isRequired,
 };
-
-export default PublicationList;

@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-import Books from './pages/Books/Books.jsx';
-import Home from './pages/Home/Home.jsx';
-import Publication from './pages/Publication/Publication.jsx';
-import Zines from './pages/Zines/Zines.jsx';
+import { Books } from './pages/Books';
+import { Home } from './pages/Home';
+import { Publication } from './pages/Publication';
+import { Zines } from './pages/Zines';
 import './index.css';
 import { getRoutes } from './routes/Routes.js';
 

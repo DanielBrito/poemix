@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 import poemixLogo from '../../assets/homepage/poemix_logo.webp';
 
-const Logo = () => {
+export const Logo = () => {
   return (
     <div width="739px" height="263px" className="max-w-[600px]">
       <Link
@@ -21,5 +21,3 @@ const Logo = () => {
     </div>
   );
 };
-
-export default Logo;

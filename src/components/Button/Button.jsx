@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import './Button.css';
 
-const Button = ({ url, text, title }) => {
+export const Button = ({ url, text, title }) => {
   return (
     <Link className="button-link" to={url} title={title} role="button" aria-label={`Ver ${text} publicados`}>
       <div className="button-block group">
@@ -19,5 +19,3 @@ Button.propTypes = {
   text: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 };
-
-export default Button;

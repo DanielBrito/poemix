@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { getFileSource } from '../../data/FilesSource';
 import './PdfWrapper.css';
 
-const PdfWrapper = ({ id }) => {
+export const PdfWrapper = ({ id }) => {
   const fileSource = getFileSource(id);
 
   return (
@@ -22,5 +22,3 @@ const PdfWrapper = ({ id }) => {
 PdfWrapper.propTypes = {
   id: PropTypes.string.isRequired,
 };
-
-export default PdfWrapper;

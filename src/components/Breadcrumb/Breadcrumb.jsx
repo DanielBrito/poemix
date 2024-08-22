@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './Breadcrumb.css';
 import { idToTitle } from '../../util/Format';
 
-import Divider from './Divider/Divider';
+import { Divider } from './Divider';
 
 const splitPages = (absolutePath) => {
   return absolutePath.split('/').filter((item) => item !== '');
@@ -25,7 +25,7 @@ const getProperTitle = (index) => {
   }
 };
 
-const Breadcrumb = ({ absolutePath }) => {
+export const Breadcrumb = ({ absolutePath }) => {
   const pathItems = splitPages(absolutePath);
   const currentPagePath = pathItems.pop();
 
@@ -57,5 +57,3 @@ const Breadcrumb = ({ absolutePath }) => {
 Breadcrumb.propTypes = {
   absolutePath: PropTypes.string.isRequired,
 };
-
-export default Breadcrumb;

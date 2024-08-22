@@ -6,7 +6,7 @@ import PdfWrapper from '../../components/PdfWrapper/PdfWrapper';
 import { idToTitle } from '../../util/Format';
 import './Publication.css';
 
-function Publication() {
+const Publication = () => {
   const location = useLocation();
   const { id } = useParams();
 
@@ -21,6 +21,6 @@ function Publication() {
       <PdfWrapper id={id} />
     </div>
   );
-}
+};
 
 export default Publication;

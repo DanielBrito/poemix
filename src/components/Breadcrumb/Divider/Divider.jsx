@@ -1,6 +1,6 @@
 import './Divider.css';
 
-function Divider() {
+const Divider = () => {
   return (
     <>
       <svg

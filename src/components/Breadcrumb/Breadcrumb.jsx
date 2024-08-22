@@ -6,15 +6,15 @@ import { idToTitle } from '../../util/Format';
 
 import Divider from './Divider/Divider';
 
-function splitPages(absolutePath) {
+const splitPages = (absolutePath) => {
   return absolutePath.split('/').filter((item) => item !== '');
-}
+};
 
-function buildPath(pages) {
+const buildPath = (pages) => {
   return `/${pages.join('/')}`;
-}
+};
 
-function getProperTitle(index) {
+const getProperTitle = (index) => {
   switch (index) {
     case 0:
       return 'Voltar ao início';
@@ -23,9 +23,9 @@ function getProperTitle(index) {
     default:
       return '';
   }
-}
+};
 
-function Breadcrumb({ absolutePath }) {
+const Breadcrumb = ({ absolutePath }) => {
   const pathItems = splitPages(absolutePath);
   const currentPagePath = pathItems.pop();
 
@@ -52,7 +52,7 @@ function Breadcrumb({ absolutePath }) {
       </ol>
     </div>
   );
-}
+};
 
 Breadcrumb.propTypes = {
   absolutePath: PropTypes.string.isRequired,

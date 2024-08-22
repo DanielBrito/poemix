@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import './PublicationItem.css';
 
-function PublicationItem({ publication }) {
+const PublicationItem = ({ publication }) => {
   return (
     <div className="publication-item-wrapper">
       <div className="thumb-wrapper">
@@ -21,7 +21,7 @@ function PublicationItem({ publication }) {
       <p className="publication-release-date">{publication.releasedAt}</p>
     </div>
   );
-}
+};
 
 PublicationItem.propTypes = {
   publication: PropTypes.shape({

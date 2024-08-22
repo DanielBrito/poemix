@@ -6,7 +6,7 @@ import Breadcrumb from '../../components/Breadcrumb/Breadcrumb';
 import PublicationList from '../../components/PublicationList/PublicationList';
 import { getBooks } from '../../data/Books';
 
-function Books() {
+const Books = () => {
   const location = useLocation();
   const books = getBooks();
 
@@ -22,6 +22,6 @@ function Books() {
       </div>
     </>
   );
-}
+};
 
 export default Books;

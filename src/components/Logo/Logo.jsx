@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 import poemixLogo from '../../assets/homepage/poemix_logo.webp';
 
-function Logo() {
+const Logo = () => {
   return (
     <div width="739px" height="263px" className="max-w-[600px]">
       <Link
@@ -20,6 +20,6 @@ function Logo() {
       </Link>
     </div>
   );
-}
+};
 
 export default Logo;

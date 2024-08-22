@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { getFileSource } from '../../data/FilesSource';
 import './PdfWrapper.css';
 
-function PdfWrapper({ id }) {
+const PdfWrapper = ({ id }) => {
   const fileSource = getFileSource(id);
 
   return (
@@ -17,7 +17,7 @@ function PdfWrapper({ id }) {
       ></iframe>
     </div>
   );
-}
+};
 
 PdfWrapper.propTypes = {
   id: PropTypes.string.isRequired,

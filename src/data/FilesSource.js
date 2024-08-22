@@ -63,6 +63,6 @@ const filesSource = {
   PROTESTIZANDO_37: 'https://drive.google.com/file/d/1hcK8w3KuUdS_7weIYRaS-JiqJDA1nGuZ/preview',
 };
 
-export function getFileSource(publicationId) {
+export const getFileSource = (publicationId) => {
   return filesSource[publicationId.toUpperCase()];
-}
+};

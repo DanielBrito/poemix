@@ -228,6 +228,6 @@ const thumbs = {
   },
 };
 
-export function getThumbs() {
+export const getThumbs = () => {
   return thumbs;
-}
+};

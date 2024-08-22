@@ -270,6 +270,6 @@ const zines = [
   },
 ];
 
-export function getZines() {
+export const getZines = () => {
   return zines;
-}
+};

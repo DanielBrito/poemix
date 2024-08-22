@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './PublicationList.css';
 import PublicationItem from '../PublicationItem/PublicationItem';
 
-function getProperStyle(publicationType) {
+const getProperStyle = (publicationType) => {
   const bookWrapperStyle = `grid gap-5 grid-cols-2 pt-2 max-w-[468px] list-wrapper`;
   const zineWrapperStyle = `grid gap-5 grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 pt-2 max-w-[1400px] list-wrapper`;
 
@@ -13,9 +13,9 @@ function getProperStyle(publicationType) {
     case 'zine':
       return zineWrapperStyle;
   }
-}
+};
 
-function PublicationList({ publications, type }) {
+const PublicationList = ({ publications, type }) => {
   const pulicationsReversed = [...publications].reverse();
   const style = getProperStyle(type);
 
@@ -26,7 +26,7 @@ function PublicationList({ publications, type }) {
       })}
     </div>
   );
-}
+};
 
 PublicationList.propTypes = {
   publications: PropTypes.arrayOf(

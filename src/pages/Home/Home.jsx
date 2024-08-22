@@ -6,7 +6,7 @@ import Logo from '../../components/Logo/Logo';
 import './Home.css';
 import { getRoutes } from '../../routes/Routes';
 
-function Home() {
+const Home = () => {
   const { APP_BASE_URL, ZINES_PATH, BOOKS_PATH } = getRoutes();
 
   useEffect(() => {
@@ -22,6 +22,6 @@ function Home() {
       </ButtonsWrapper>
     </div>
   );
-}
+};
 
 export default Home;

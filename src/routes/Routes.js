@@ -43,6 +43,6 @@ const routes = {
   PROTESTIZANDO_37_PATH: '/protestizando_37',
 };
 
-export function getRoutes() {
+export const getRoutes = () => {
   return routes;
-}
+};

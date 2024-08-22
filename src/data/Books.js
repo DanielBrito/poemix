@@ -25,6 +25,6 @@ const books = [
   },
 ];
 
-export function getBooks() {
+export const getBooks = () => {
   return books;
-}
+};

@@ -13,7 +13,7 @@ const PublicationItem = ({ publication }) => {
             width="339px"
             height="480px"
             title={`Ler ${publication.name.toUpperCase()}`}
-            alt="TODO"
+            alt={publication.altText}
           />
         </Link>
       </div>
@@ -29,6 +29,7 @@ PublicationItem.propTypes = {
     releasedAt: PropTypes.string.isRequired,
     thumb: PropTypes.string.isRequired,
     path: PropTypes.string.isRequired,
+    altText: PropTypes.string.isRequired,
   }),
 };
 

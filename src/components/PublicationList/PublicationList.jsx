@@ -35,6 +35,7 @@ PublicationList.propTypes = {
       releasedAt: PropTypes.string.isRequired,
       thumb: PropTypes.string.isRequired,
       path: PropTypes.string.isRequired,
+      altText: PropTypes.string.isRequired,
     }),
   ),
   type: PropTypes.string.isRequired,

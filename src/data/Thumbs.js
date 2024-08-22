@@ -65,135 +65,135 @@ const thumbs = {
     },
     PROTESTIZANDO_5: {
         image: PROTESTIZANDO_5_THUMB,
-        altText: "Some text"
+        altText: "Arte feita à mão com uma borda vermelha possuindo corações nas pontas com o texto POESIA e, internamente, o título PROTESTIZANDO com uma citação de Anaïs Nin: 'O erotismo é uma das bases do conhecimento de nós próprios, tão indispensável como a poesia'."
     },
     PROTESTIZANDO_6: {
         image: PROTESTIZANDO_6_THUMB,
-        altText: "Some text"
+        altText: "Arte feita à mão com uma ilustração de Bashô sentado à beira de um rio, logo abaixo do título PROTESTIZANDO #6, fazendo referência ao haicai."
     },
     PROTESTIZANDO_7: {
         image: PROTESTIZANDO_7_THUMB,
-        altText: "Some text"
+        altText: "Arte com design em forma de enigma, com o título da publicação fazendo referência ao nome DANIEL, através de círculos com letras internas sendo conectados."
     },
     PROTESTIZANDO_8: {
         image: PROTESTIZANDO_8_THUMB,
-        altText: "Some text"
+        altText: "Arte de uma cidade em preto e branco feita à mão, logo acima do título da publicação, destacando o texto POETIZANDO #8."
     },
     PROTESTIZANDO_9: {
         image: PROTESTIZANDO_9_THUMB,
-        altText: "Some text"
+        altText: "Texto PROTESTIZANDO #9, representado por três colunas de 5 letras, sobre um fundo branco com o estilo de fonte referenciando a arte de rua."
     },
     PROTESTIZANDO_10: {
         image: PROTESTIZANDO_10_THUMB,
-        altText: "Some text"
+        altText: "Texto PROTESTIZANDO X escrito verticalmente dez vezes, com a estrutura fazendo referência à estrutura do soneto, isto é, 4-4-3-3 versos."
     },
     PROTESTIZANDO_11: {
         image: PROTESTIZANDO_11_THUMB,
-        altText: "Some text"
+        altText: "Arte com design em forma de enigma matemático, no qual os símbolos vermelhos são números e as operações aritméticas resultam na edição, ou seja, 11."
     },
     PROTESTIZANDO_12: {
         image: PROTESTIZANDO_12_THUMB,
-        altText: "Some text"
+        altText: "Arte feita à mão com o título ZINE PROTESTIZANDO no topo e um jogo da velha com desenhos de beijo formando uma diagonal."
     },
     PROTESTIZANDO_13: {
         image: PROTESTIZANDO_13_THUMB,
-        altText: "Some text"
+        altText: "Arte feita à mão com o nome PROTESTIZANDO no topo e a figura de um Aluminion falando #13."
     },
     PROTESTIZANDO_14: {
         image: PROTESTIZANDO_14_THUMB,
-        altText: "Some text"
+        altText: "Fundo preto com um triângulo apontando para a esquerda com o título ZINE PROTESTIZANDO #14 internamente."
     },
     PROTESTIZANDO_15: {
         image: PROTESTIZANDO_15_THUMB,
-        altText: "Some text"
+        altText: "Arte de um átomo feita à mão, logo abaixo do texto PROTESTIZANDO e acima da edição #15."
     },
     PROTESTIZANDO_16: {
         image: PROTESTIZANDO_16_THUMB,
-        altText: "Some text"
+        altText: "Arte com design em forma de enigma, onde cada letra do nome PROTESTIZANDO está dentro de um quadrado, e as letras DANIEL estão destacadas em vermelho."
         },
     PROTESTIZANDO_17: {
         image: PROTESTIZANDO_17_THUMB,
-        altText: "Some text"
+        altText: "Recorte da pintura em que Sócrates conversa com Platão, e o primeiro está dizendo PROTESTIZANDO com letras gregas."
     },
     PROTESTIZANDO_18: {
         image: PROTESTIZANDO_18_THUMB,
-        altText: "Some text"
+        altText: "Fundo branco com a imagem de Eros segurando um arco, logo abaixo do título PROTESTIZANDO +18."
     },
     PROTESTIZANDO_19: {
         image: PROTESTIZANDO_19_THUMB,
-        altText: "Some text"
+        altText: "Design em forma de enigma, onde algumas letras brancas estão dentro de círculos pretos, e algumas sílabas são representadas por números primos."
     },
     PROTESTIZANDO_20: {
         image: PROTESTIZANDO_20_THUMB,
-        altText: "Some text"
+        altText: "Fundo preto com a silhueta branca de pessoas em um protesto, hasteando uma bandeira com o número 20, da edição, e segurando uma faixa com o nome PROTESTIZANDO."
     },
     PROTESTIZANDO_21: {
         image: PROTESTIZANDO_21_THUMB,
-        altText: "Some text"
+        altText: "Fundo branco com o nome PROTESTIZANDO formando uma ampulheta, possuindo letras pretas representando a areia."
     },
     PROTESTIZANDO_22: {
         image: PROTESTIZANDO_22_THUMB,
-        altText: "Some text"
+        altText: "Fundo branco com as letras PROTESTIZANDO formando um coração, destacando o texto POETIZANDO, em vermelho, e com o número da edição ao centro, isto é, 22."
     },
     PROTESTIZANDO_23: {
         image: PROTESTIZANDO_23_THUMB,
-        altText: "Some text"
+        altText: "Fundo preto com uma lâmpada sendo formada por círculos amarelos contento as letras do título PROTESTIZANDO, e a edição XXIII, em numeração romana."
     },
     PROTESTIZANDO_24: {
         image: PROTESTIZANDO_24_THUMB,
-        altText: "Some text"
+        altText: "Fundo vermelho com um punho cerrado ao centro e o nome PROTESTIZANDO #24 escrito nas bordas, destacando a palavra PROTESTANDO."
     },
     PROTESTIZANDO_25: {
         image: PROTESTIZANDO_25_THUMB,
-        altText: "Some text"
+        altText: "Fundo com a cor amarelo claro, possuindo uma grade quadricular 5x5 com alguns elementos pintados de vermelho formando um coração, abaixo do título PROTESTIZANDO #25."
     },
     PROTESTIZANDO_26: {
         image: PROTESTIZANDO_26_THUMB,
-        altText: "Some text"
+        altText: "Design espelhado em preto e branco, no qual a palavra PROTESTIZANDO está escrita verticalmente, juntamente com o número da edição."
     },
     PROTESTIZANDO_27: {
         image: PROTESTIZANDO_27_THUMB,
-        altText: "Some text"
+        altText: "Fundo cor de rosa com o título PROTESTIZANDO, ao topo, e a edição XXVII, logo abaixo, formando um coração."
     },
     PROTESTIZANDO_28: {
         image: PROTESTIZANDO_28_THUMB,
-        altText: "Some text"
+        altText: "Fundo branco com o nome PROTESTIZANDO #XXVIII sendo representado por letras tridimensionais organizadas em três colunas e seis linhas."
     },
     PROTESTIZANDO_29: {
         image: PROTESTIZANDO_29_THUMB,
-        altText: "Some text"
+        altText: "Fundo branco com o nome PrOtEsTIZANDO #29, ao centro, possuindo um coração como pingo na letra I."
     },
     PROTESTIZANDO_30: {
         image: PROTESTIZANDO_30_THUMB,
-        altText: "Some text"
+        altText: "Fundo cor de vinho com alguns quadrados representados ao centro, logo abaixo do título PROTESTIZANDO, e acima da edição, #30."
     },
     PROTESTIZANDO_31: {
         image: PROTESTIZANDO_31_THUMB,
-        altText: "Some text"
+        altText: "Fundo verde com um coquetel molotov aceso, possuindo o nome PROTESTizANDO ao centro."
     },
     PROTESTIZANDO_32: {
         image: PROTESTIZANDO_32_THUMB,
-        altText: "Some text"
+        altText: "Fundo branco com o nome PROTESTIZANDO escrito em formato circular, ao centro, no qual a letra E é utilizada para formar um coração."
     },
     PROTESTIZANDO_33: {
         image: PROTESTIZANDO_33_THUMB,
-        altText: "Some text"
+        altText: "Fundo branco com o nome PROTESTIZANDO sendo representado em um formato enigmático, com as letras dispostas no espaço da página, destacando o texto POETIZANDO, em vermelho."
     },
     PROTESTIZANDO_34: {
         image: PROTESTIZANDO_34_THUMB,
-        altText: "Some text"
+        altText: "Fundo branco com cada letra do nome PROTESTIZANDO #34, ao centro, sendo representada por uma fonte diferente."
     },
     PROTESTIZANDO_35: {
         image: PROTESTIZANDO_35_THUMB,
-        altText: "Some text"
+        altText: "Fundo preto com um coração em chamas ao centro, possuindo o texto PROTESTIZANDO #35 internamente."
     },
     PROTESTIZANDO_36: {
         image: PROTESTIZANDO_36_THUMB,
-        altText: "Some text"
+        altText: "Fundo azul escuro com uma ilustração do sol e lua sobrepostos, logo abaixo do título PROTESTIZANDO, e da edição, #36."
     },
     PROTESTIZANDO_37: {
         image: PROTESTIZANDO_37_THUMB,
-        altText: "Some text"
+        altText: "Fundo branco com formas quadriculadas descendo do topo sobre o título PROTESTIZANDO #37."
     }
 }
 

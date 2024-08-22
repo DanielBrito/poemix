@@ -1,19 +1,19 @@
 .publication-item-wrapper {
-  @apply flex justify-center flex-col
+  @apply flex justify-center flex-col;
 }
 
 .thumb-wrapper {
-  @apply w-full h-full bg-gray-100
+  @apply w-full h-full bg-gray-100;
 }
 
 .publication-thumb {
-  @apply w-full h-full object-cover border-solid border-black border relative z-0 transition-all duration-300 hover:scale-100 hover:shadow-md hover:shadow-gray-400
+  @apply w-full h-full object-cover border-solid border-black border relative z-0 transition-all duration-300 hover:scale-100 hover:shadow-md hover:shadow-gray-400;
 }
 
 .publication-title {
-  @apply mt-2 text-sm font-bold font-sans text-center
+  @apply mt-2 text-sm font-bold font-sans text-center;
 }
 
 .publication-release-date {
-  @apply mb-5 text-xs font-semibold font-sans text-gray-600 text-center
+  @apply mb-5 text-xs font-semibold font-sans text-gray-600 text-center;
 }

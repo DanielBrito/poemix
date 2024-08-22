@@ -1,16 +1,17 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import "./Zines.css";
-import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
-import { getZines } from "../../data/Zines"
-import PublicationList from "../../components/PublicationList/PublicationList";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
+import './Zines.css';
+import Breadcrumb from '../../components/Breadcrumb/Breadcrumb';
+import PublicationList from '../../components/PublicationList/PublicationList';
+import { getZines } from '../../data/Zines';
 
 function Zines() {
   const location = useLocation();
   const zines = getZines();
 
   useEffect(() => {
-    document.title = "ZINES | Daniel Brito"
+    document.title = 'ZINES | Daniel Brito';
   }, []);
 
   return (

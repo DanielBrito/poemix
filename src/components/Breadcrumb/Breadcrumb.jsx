@@ -1,22 +1,27 @@
-import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
-import "./Breadcrumb.css";
-import Divider from "./Divider/Divider";
-import { idToTitle } from "../../util/Format"
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+
+import './Breadcrumb.css';
+import { idToTitle } from '../../util/Format';
+
+import Divider from './Divider/Divider';
 
 function splitPages(absolutePath) {
-  return absolutePath.split("/").filter((item) => item !== "");
+  return absolutePath.split('/').filter((item) => item !== '');
 }
 
 function buildPath(pages) {
-  return `/${pages.join("/")}`;
+  return `/${pages.join('/')}`;
 }
 
 function getProperTitle(index) {
-  switch(index) {
-    case 0: return "Voltar ao início"
-    case 1: return "Ver publicações"
-    default: return ""
+  switch (index) {
+    case 0:
+      return 'Voltar ao início';
+    case 1:
+      return 'Ver publicações';
+    default:
+      return '';
   }
 }
 

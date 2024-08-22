@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
-import "./Button.css";
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import './Button.css';
 
 function Button({ url, text, title }) {
   return (

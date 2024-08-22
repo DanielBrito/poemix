@@ -4,6 +4,8 @@
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:import/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
     "plugin:jsx-a11y/recommended",
     "eslint-config-prettier"
   ],
@@ -13,16 +15,15 @@
     },
     "import/resolver": {
       "node": {
-        "paths": [
-          "src"
-        ],
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
+        "paths": ["src"],
+        "extensions": [".js", ".jsx"]
       }
     }
   },
+  "plugins": [
+    "react",
+    "import"
+  ],
   "rules": {
     "no-unused-vars": [
       "error",
@@ -33,6 +34,21 @@
         "argsIgnorePattern": "^_"
       }
     ],
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "import/namespace": "off",
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ]
+  },
+  "env": {
+    "browser": true
   }
 }

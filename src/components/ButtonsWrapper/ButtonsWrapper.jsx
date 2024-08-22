@@ -1,12 +1,8 @@
-import PropTypes from "prop-types";
-import "./ButtonsWrapper.css";
+import PropTypes from 'prop-types';
+import './ButtonsWrapper.css';
 
 function ButtonsWrapper({ children }) {
-  return (
-    <div className="group-buttons">
-      {children}
-    </div>
-  );
+  return <div className="group-buttons">{children}</div>;
 }
 
 ButtonsWrapper.propTypes = {

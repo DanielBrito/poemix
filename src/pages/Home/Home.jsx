@@ -1,16 +1,16 @@
-import { useEffect } from "react";
-import Button from "../../components/Button/Button";
-import Logo from "../../components/Logo/Logo";
-import "./Home.css";
-import { getRoutes } from "../../routes/Routes";
-import ButtonsWrapper from "../../components/ButtonsWrapper/ButtonsWrapper";
-import React from "react";
+import { React, useEffect } from 'react';
+
+import Button from '../../components/Button/Button';
+import ButtonsWrapper from '../../components/ButtonsWrapper/ButtonsWrapper';
+import Logo from '../../components/Logo/Logo';
+import './Home.css';
+import { getRoutes } from '../../routes/Routes';
 
 function Home() {
   const { APP_BASE_URL, ZINES_PATH, BOOKS_PATH } = getRoutes();
 
   useEffect(() => {
-    document.title = "POEMIX | Daniel Brito"
+    document.title = 'POEMIX | Daniel Brito';
   }, []);
 
   return (

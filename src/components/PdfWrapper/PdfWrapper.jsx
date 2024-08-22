@@ -1,26 +1,26 @@
-import PropTypes from "prop-types";
-import { getFileSource } from "../../data/FilesSource";
-import "./PdfWrapper.css"
+import PropTypes from 'prop-types';
 
-function PdfWrapper({id}) {
-    const fileSource = getFileSource(id)
+import { getFileSource } from '../../data/FilesSource';
+import './PdfWrapper.css';
 
-    return(
-        <div className="pdf-wrapper">
-            <iframe 
-                src={fileSource} 
-                className="pdf-iframe" 
-                id="pdf-iframe"
-                allow="autoplay"
-                title="Visualizador de PDF"
-            >
-            </iframe>
-        </div>
-    )
+function PdfWrapper({ id }) {
+  const fileSource = getFileSource(id);
+
+  return (
+    <div className="pdf-wrapper">
+      <iframe
+        src={fileSource}
+        className="pdf-iframe"
+        id="pdf-iframe"
+        allow="autoplay"
+        title="Visualizador de PDF"
+      ></iframe>
+    </div>
+  );
 }
 
 PdfWrapper.propTypes = {
-    id: PropTypes.string.isRequired
-}
+  id: PropTypes.string.isRequired,
+};
 
 export default PdfWrapper;

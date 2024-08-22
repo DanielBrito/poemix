@@ -3,8 +3,8 @@ import "./PublicationList.css";
 import PublicationItem from "../PublicationItem/PublicationItem";
 
 function getProperStyle(publicationType) {
-  const bookWrapperStyle = `grid gap-2 grid-cols-2 pt-2 max-w-[468px] wrapper`;
-  const zineWrapperStyle = `grid gap-2 grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 pt-2 max-w-[1400px] wrapper`
+  const bookWrapperStyle = `grid gap-5 grid-cols-2 pt-2 max-w-[468px] list-wrapper`;
+  const zineWrapperStyle = `grid gap-5 grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 pt-2 max-w-[1400px] list-wrapper`
 
   switch(publicationType){
     case "book": return bookWrapperStyle

@@ -17,7 +17,7 @@ function Books() {
     <>
       <Breadcrumb absolutePath={location.pathname} />
       <div className="books-list-wrapper">
-        <PublicationList publications={books} type={"book"} />
+        <PublicationList publications={books} type="book" />
       </div>
     </>
   );

@@ -29,7 +29,7 @@ function Breadcrumb({ absolutePath }) {
       <ol className="nav-list">
         {pathItems.map((pathItem, index) => {
           return (
-            <li className="nav-item" key={pathItem}>
+            <li className="nav-item" key={pathItem} role="presentation" aria-label={getProperTitle(index)}>
               <Link
                 className="previous-item"
                 to={buildPath(pathItems.slice(0, index + 1))}

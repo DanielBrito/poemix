@@ -11,8 +11,8 @@ function PdfWrapper({id}) {
                 src={fileSource} 
                 className="pdf-iframe" 
                 id="pdf-iframe"
-                allow={"autoplay"}
-                title={"Visualizador de PDF"}
+                allow="autoplay"
+                title="Visualizador de PDF"
             >
             </iframe>
         </div>

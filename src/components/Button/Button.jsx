@@ -4,7 +4,7 @@ import "./Button.css";
 
 function Button({ url, text, title }) {
   return (
-    <Link className="button-link" to={url} title={title}>
+    <Link className="button-link" to={url} title={title} role="button" aria-label={`Ver ${text} publicados`}>
       <div className="button-block group">
         <span className="button-block-hover"></span>
         <span className="button-block-default"></span>

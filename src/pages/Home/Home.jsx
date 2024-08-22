@@ -17,8 +17,8 @@ function Home() {
     <div className="home-wrapper">
       <Logo />
       <ButtonsWrapper>
-        <Button url={`${APP_BASE_URL}${ZINES_PATH}`} text={"Zines"} title={"Ver zines publicados"} />
-        <Button url={`${APP_BASE_URL}${BOOKS_PATH}`} text={"Livros"} title={"Ver livros publicados"} />
+        <Button url={`${APP_BASE_URL}${ZINES_PATH}`} text="Zines" title="Ver zines publicados" />
+        <Button url={`${APP_BASE_URL}${BOOKS_PATH}`} text="Livros" title="Ver livros publicados" />
       </ButtonsWrapper>
     </div>
   );

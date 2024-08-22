@@ -3,7 +3,7 @@ import "./ButtonsWrapper.css";
 
 function ButtonsWrapper({ children }) {
   return (
-    <div id="group-buttons" className="group-buttons">
+    <div className="group-buttons">
       {children}
     </div>
   );

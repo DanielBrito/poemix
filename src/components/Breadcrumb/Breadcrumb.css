@@ -1,9 +1,5 @@
-.breadcrumb {
-  padding-top: 20px;
-  margin-bottom: 20px;
-
-  display: flex;
-  justify-content: center;
+.breadcrumb-wrapper {
+  @apply pt-5 mb-5 flex justify-center;
 }
 
 .previous-item {
@@ -12,4 +8,12 @@
 
 .active-item {
   @apply inline-flex items-center text-sm font-extrabold text-red-600;
+}
+
+.nav-list {
+  @apply flex items-center whitespace-nowrap;
+}
+
+.nav-item {
+  @apply inline-flex items-center;
 }

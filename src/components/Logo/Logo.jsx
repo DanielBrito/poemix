@@ -4,9 +4,9 @@ import "./Logo.css";
 
 function Logo() {
   return (
-    <div width={"739px"} height={"263px"} className="max-w-[600px]">
+    <div className="logo-wrapper" >
       <Link to={"https://danielbrito.github.io/projetos/#poemix"} target="_blank" rel="noopener noreferrer">
-        <img src={poemixLogo} id="logo" alt="Poemix logo" width={"739px"} height={"263px"} />
+        <img src={poemixLogo} alt="Poemix logo" />
       </Link>
     </div>
   );

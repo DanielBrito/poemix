@@ -17,9 +17,9 @@ export const Books = () => {
   return (
     <>
       <Breadcrumb absolutePath={location.pathname} />
-      <div className="books-list-wrapper">
+      <main className="books-list-wrapper">
         <PublicationList publications={books} type="book" />
-      </div>
+      </main>
     </>
   );
 };

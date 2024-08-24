@@ -6,7 +6,7 @@ export const PublicationItem = ({ publication }) => {
   return (
     <div className="publication-item-wrapper">
       <div className="thumb-wrapper">
-        <Link to={publication.path} role="button">
+        <Link to={publication.path} role="button" aria-label={`Ler ${publication.name.toUpperCase()}`}>
           <img
             src={publication.thumb}
             className="publication-thumb"

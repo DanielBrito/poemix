@@ -34,11 +34,12 @@ export const Breadcrumb = ({ absolutePath }) => {
       <ol className="nav-list">
         {pathItems.map((pathItem, index) => {
           return (
-            <li className="nav-item" key={pathItem} role="presentation" aria-label={getProperTitle(index)}>
+            <li className="nav-item" key={pathItem} role="presentation">
               <Link
                 className="previous-item"
                 to={buildPath(pathItems.slice(0, index + 1))}
                 title={getProperTitle(index)}
+                aria-label={getProperTitle(index)}
               >
                 {idToTitle(pathItem)}
               </Link>

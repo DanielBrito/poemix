@@ -14,12 +14,12 @@ export const Home = () => {
   }, []);
 
   return (
-    <div className="home-wrapper">
+    <main className="home-wrapper">
       <Logo />
       <ButtonsWrapper>
         <Button url={`${APP_BASE_URL}${ZINES_PATH}`} text="Zines" title="Ver zines publicados" />
         <Button url={`${APP_BASE_URL}${BOOKS_PATH}`} text="Livros" title="Ver livros publicados" />
       </ButtonsWrapper>
-    </div>
+    </main>
   );
 };

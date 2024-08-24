@@ -10,6 +10,7 @@ export const Logo = () => {
         target="_blank"
         rel="noopener noreferrer"
         title="Saiba mais"
+        aria-label={`Acessar site pessoal oficial`}
       >
         <img
           src={poemixLogo}

@@ -17,9 +17,9 @@ export const Zines = () => {
   return (
     <>
       <Breadcrumb absolutePath={location.pathname} />
-      <div className="zines-list-wrapper">
+      <main className="zines-list-wrapper">
         <PublicationList publications={zines} type="zine" />
-      </div>
+      </main>
     </>
   );
 };

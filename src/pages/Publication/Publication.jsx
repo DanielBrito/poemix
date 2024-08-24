@@ -18,7 +18,9 @@ export const Publication = () => {
   return (
     <div className="publication-wrapper">
       <Breadcrumb absolutePath={location.pathname} />
-      <PdfWrapper id={id} />
+      <main>
+        <PdfWrapper id={id} />
+      </main>
     </div>
   );
 };

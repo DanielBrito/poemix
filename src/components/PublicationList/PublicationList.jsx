@@ -16,12 +16,12 @@ const getProperStyle = (publicationType) => {
 };
 
 export const PublicationList = ({ publications, type }) => {
-  const pulicationsReversed = [...publications].reverse();
+  const publicationsReversed = [...publications].reverse();
   const style = getProperStyle(type);
 
   return (
     <div className={`${style}`}>
-      {pulicationsReversed.map((publication) => {
+      {publicationsReversed.map((publication) => {
         return <PublicationItem publication={publication} key={publication.name} />;
       })}
     </div>

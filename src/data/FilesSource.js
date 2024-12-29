@@ -61,6 +61,7 @@ const filesSource = {
   PROTESTIZANDO_35: 'https://drive.google.com/file/d/1FF9gMYImd2BYE9bTqIZTFSqL3jHjMf_1/preview',
   PROTESTIZANDO_36: 'https://drive.google.com/file/d/1j3wcCtYzIw0bB3qjrDwlSg44LtDnmxZD/preview',
   PROTESTIZANDO_37: 'https://drive.google.com/file/d/1hcK8w3KuUdS_7weIYRaS-JiqJDA1nGuZ/preview',
+  PROTESTIZANDO_38: 'https://drive.google.com/file/d/1HvHCib3EfGUKew_wZ-97XZnXR-7b72n9/preview',
 };
 
 export const getFileSource = (publicationId) => {

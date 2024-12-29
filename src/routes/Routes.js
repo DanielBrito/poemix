@@ -41,6 +41,7 @@ const routes = {
   PROTESTIZANDO_35_PATH: '/protestizando_35',
   PROTESTIZANDO_36_PATH: '/protestizando_36',
   PROTESTIZANDO_37_PATH: '/protestizando_37',
+  PROTESTIZANDO_38_PATH: '/protestizando_38',
 };
 
 export const getRoutes = () => {

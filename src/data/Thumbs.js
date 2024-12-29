@@ -31,6 +31,7 @@ import PROTESTIZANDO_34_THUMB from '../assets/zines/protestizando_34.webp';
 import PROTESTIZANDO_35_THUMB from '../assets/zines/protestizando_35.webp';
 import PROTESTIZANDO_36_THUMB from '../assets/zines/protestizando_36.webp';
 import PROTESTIZANDO_37_THUMB from '../assets/zines/protestizando_37.webp';
+import PROTESTIZANDO_38_THUMB from '../assets/zines/protestizando_38.webp';
 import PROTESTIZANDO_4_THUMB from '../assets/zines/protestizando_4.webp';
 import PROTESTIZANDO_5_THUMB from '../assets/zines/protestizando_5.webp';
 import PROTESTIZANDO_6_THUMB from '../assets/zines/protestizando_6.webp';
@@ -220,11 +221,16 @@ const thumbs = {
   PROTESTIZANDO_36: {
     image: PROTESTIZANDO_36_THUMB,
     altText:
-      'Fundo azul escuro com uma ilustração do sol e lua sobrepostos, logo abaixo do título PROTESTIZANDO, e da edição, #36.',
+      'Fundo azul escuro com uma ilustração do sol e lua sobrepostos, logo abaixo do título PROTESTIZANDO e da edição, #36.',
   },
   PROTESTIZANDO_37: {
     image: PROTESTIZANDO_37_THUMB,
     altText: 'Fundo branco com formas quadriculadas descendo do topo sobre o título PROTESTIZANDO #37.',
+  },
+  PROTESTIZANDO_38: {
+    image: PROTESTIZANDO_38_THUMB,
+    altText:
+      'Fundo verde claro com o título PROTESTIZANDO ao topo, algumas folhas caindo no centro e, logo abaixo, a edição, #38.',
   },
 };
 

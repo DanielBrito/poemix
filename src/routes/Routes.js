@@ -1,4 +1,4 @@
-const NUMBER_OF_PUBLISHED_ZINES = 37
+const NUMBER_OF_PUBLISHED_ZINES = 38
 
 const routes = {
   APP_BASE_URL: '/poemix',

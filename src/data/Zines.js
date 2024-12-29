@@ -268,6 +268,13 @@ const zines = [
     path: `${zinesPathPrefix}${routes.PROTESTIZANDO_37_PATH}`,
     altText: thumbs.PROTESTIZANDO_37.altText,
   },
+  {
+    name: 'PROTESTIZANDO #38',
+    releasedAt: '29/12/2024',
+    thumb: thumbs.PROTESTIZANDO_38.image,
+    path: `${zinesPathPrefix}${routes.PROTESTIZANDO_38_PATH}`,
+    altText: thumbs.PROTESTIZANDO_38.altText,
+  },
 ];
 
 export const getZines = () => {
